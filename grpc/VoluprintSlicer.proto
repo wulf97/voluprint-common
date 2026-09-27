@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+message VersionRequest {
+
+}
+
+message VersionReply {
+  string version = 1;
+}
+
+service VoluprintSlicer {
+  rpc GetVersion (VersionRequest) returns (VersionReply) {}
+}
